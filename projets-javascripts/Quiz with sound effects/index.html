@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz JS</title>
+  <style>
+    body {
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh; margin: 0; background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    .quiz-container {
+      background: #fff; padding: 20px; border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 300px;
+      border: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .quiz-container:hover {
+      border-color: #1a0dab;
+    }
+    .question { font-size: 20px; margin-bottom: 10px; }
+    .answers button {
+      display: block; width: 100%; margin: 5px 0;
+      padding: 8px; font-size: 16px; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="questionEl" class="question"></div>
+    <div class="answers">
+      <button class="answerBtn" data-index="0"></button>
+      <button class="answerBtn" data-index="1"></button>
+      <button class="answerBtn" data-index="2"></button>
+      <button class="answerBtn" data-index="3"></button>
+    </div>
+    <div id="resultEl" style="margin-top:15px;font-size:18px;"></div>
+  </div>
+
+  <!-- Sons de feedback -->
+  <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+  <audio id="incorrectSound" src="incorrect.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

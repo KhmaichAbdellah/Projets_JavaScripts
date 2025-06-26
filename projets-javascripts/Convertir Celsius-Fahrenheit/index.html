@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Convertisseur Celsius ↔ Fahrenheit</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f2;
+      font-family: Arial, sans-serif;
+    }
+    .converter {
+      background: #edda05;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input, select, button {
+      font-size: 18px;
+      padding: 8px;
+      margin: 10px 0;
+      width: 200px;
+    }
+    button {
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #2dae9a;
+    }
+  </style>
+</head>
+<body>
+  <div class="converter">
+    <h1>Convertisseur</h1>
+    <input type="number" id="temperature" placeholder="Entrez une valeur">
+    <select id="unit">
+      <option value="CtoF">°C → °F</option>
+      <option value="FtoC">°F → °C</option>
+    </select>
+    <button id="convertBtn">Convertir</button>
+    <div id="result">Résultat ici</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

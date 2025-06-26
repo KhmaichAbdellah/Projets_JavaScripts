@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur d'Âge</title>
+  <style>
+    body {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 100vh; margin: 0;
+      background: #1e1e1e; color: #f0f0f0;
+      font-family: Arial, sans-serif; text-align: center;
+    }
+    input, button {
+      font-size: 18px; padding: 8px;
+      margin: 10px;
+    }
+    #ageDisplay {
+      margin-top: 20px;
+      font-size: 24px;
+      background: #2e2e2e;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculateur d'Âge</h1>
+  <label for="birthdate">Votre date de naissance :</label>
+  <input type="date" id="birthdate" max="">
+  <button id="startBtn">Calculer mon âge</button>
+
+  <div id="ageDisplay">
+    Entrez votre date de naissance et cliquez sur « Calculer mon âge »
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

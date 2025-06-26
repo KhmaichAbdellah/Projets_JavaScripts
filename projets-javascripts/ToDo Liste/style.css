@@ -1,0 +1,32 @@
+body {
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh; margin: 0;
+}
+.todo-container {
+  background: #fff;
+  padding: 20px; border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px;
+}
+.input-group { display: flex; }
+#taskInput {
+  flex: 1; padding: 8px; font-size: 16px;
+  border: 1px solid #ccc; border-radius: 4px 0 0 4px;
+}
+#addBtn {
+  padding: 8px 12px; border: none; cursor: pointer;
+  background: #28a745; color: #fff; font-size: 16px;
+  border-radius: 0 4px 4px 0;
+}
+#taskList {
+  list-style: none; padding: 0; margin-top: 20px;
+}
+#taskList li {
+  background: #f1f1f1; padding: 10px;
+  margin-bottom: 8px; border-radius: 4px;
+  display: flex; justify-content: space-between;
+}
+#taskList li.completed { text-decoration: line-through; color: #777; }
+.task-btn { background: none; border: none; cursor: pointer; font-size: 16px; }
